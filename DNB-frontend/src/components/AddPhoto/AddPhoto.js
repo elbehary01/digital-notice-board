@@ -64,7 +64,7 @@ class AddPhoto extends React.Component {
                     </FormGroup>
                     <FormGroup>
                     {this.state.setOfImages.map((item, index) => (
-                      <div>
+                      <div key={index} >
                       <Label for="examplePassword"></Label>
                       <Input className="photoarraypiece" onChange={(e) => this.onChange(e.target.id, e.target.value)} id={`photo_${index}`}  defaultValue={item}/>
                       </div>

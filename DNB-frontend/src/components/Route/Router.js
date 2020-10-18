@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ModulesSideBar from '../modules-side-bar/ModulesSideBar';
+import ModulesSideBar from '../Modules-side-bar/ModulesSideBar';
 import App from '../../App'
-import Admin from '../Admin/Admin'
-import Login from '../login/Login';
+import Admin from '../Admin/Admin';
+import Login from '../Login/Login';
 import Register from '../Register/Register';
-import ForgotPassword from '../forgot/ForgotPassword';
+import ForgotPassword from '../Forgot/ForgotPassword';
 
 
 const Router = () => (

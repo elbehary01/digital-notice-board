@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import Photos from "./components/photos/Photos.js";
-import "./App.css";
-import Video from "./components/video/Video.js";
-import Github from "./components/github/Github.js";
-import ModulesSideBar from "./components/modules-side-bar/ModulesSideBar";
-import SlideTimeline from "./components/timeline/SlideTimeline.js";
-import SnippetSlide from "./components/snippet-slide/SnippetSlide.js";
 import { Button, Nav, NavItem, NavLink } from "reactstrap";
-import { PROGRESS_BAR_SPEED } from "./constants/misc.js";
-import Announcement from "./components/Announcement/Announcement";
-import Meetup from "./components/meetup/Meetup";
 import Slider from "react-slick";
-import "./components/modules-side-bar/ModulesSideBar.css";
+import Photos from "./components/Photos/Photos.js";
+import Video from "./components/Video/Video.js";
+import Github from "./components/Github/Github.js";
+import ModulesSideBar from "./components/Modules-side-bar/ModulesSideBar";
+import SlideTimeline from "./components/Timeline/SlideTimeline.js";
+import SnippetSlide from "./components/Snippet-slide/SnippetSlide.js";
+import Announcement from "./components/Announcement/Announcement";
+import Meetup from "./components/Meetup/Meetup";
+import { PROGRESS_BAR_SPEED } from "./constants/misc.js";
+import "./components/Modules-side-bar/ModulesSideBar.css";
+import "./App.css";
 
 class App extends Component {
   state = {

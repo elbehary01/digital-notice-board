@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ModulesSideBar from '../modules-side-bar/ModulesSideBar';
+import ModulesSideBar from '../Modules-side-bar/ModulesSideBar';
 import Search from "./Search";
 import SlideDetail from "./SlideDetail"
 import AddVideo from '../AddVideo/AddVideo';
@@ -160,8 +160,8 @@ class Admin extends Component {
                 //handleSearchCheckbox={this.handleSearchCheckbox}
                 searchData={this.state.searchData}
               />
-                {data.map((item, value) => (
-                  <li className="list-group-item mb-2">
+                {data.map((item, value, i) => (
+                  <li className="list-group-item mb-2" key={i}>
                     <ModulesSideBar
                       current={this.state.currentSlide}
                       handleToggleClick={() => this.slideHandler(item)}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../login/style.css';
+import '../Login/style.css';
 import {Button, Form, FormGroup, Input, Label, Nav, NavItem, NavLink} from 'reactstrap';
 
 class Navigation extends React.Component {

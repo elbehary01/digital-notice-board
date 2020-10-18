@@ -1,5 +1,5 @@
 import React from 'react';
-import '../login/style.css';
+import '../Login/style.css';
 import {Row, Col, Button, Form, FormGroup, Input, Label, Nav, NavItem, NavLink} from 'reactstrap';
 import Navigation from "../Navigation/Navigation.js"
 
@@ -45,7 +45,7 @@ class Register extends React.Component {
           <FormGroup>
             <div className="inputGroup inputGroup1">
               <Label for="email1">Email</Label>
-              <Input type="text" id="email" className="email" type="text" name="email" required value={this.state.registerData.email} onChange={this.handleChange} onSubmit={this.validateEmail} maxlength="256" placeholder="Enter Email"/>
+              <Input type="text" id="email" className="email" type="text" name="email" required value={this.state.registerData.email} onChange={this.handleChange} onSubmit={this.validateEmail} maxLength="256" placeholder="Enter Email"/>
               <div>{!this.validateEmail(this.state.registerData.email)
                   ? <div>Invalid Email</div>
                   : null}

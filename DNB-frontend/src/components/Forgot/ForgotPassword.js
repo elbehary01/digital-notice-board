@@ -1,5 +1,5 @@
 import React from 'react';
-import '../login/style.css';
+import '../Login/style.css';
 import {Row, Col, Button, Form, FormGroup, Input, Label, Nav, NavItem, NavLink} from 'reactstrap';
 import Navigation from "../Navigation/Navigation.js"
 
