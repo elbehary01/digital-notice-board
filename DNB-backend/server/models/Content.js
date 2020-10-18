@@ -5,18 +5,19 @@ const mongoose = require('mongoose');
 const ContentSchema = mongoose.Schema({
   type: {
     type: String,
-    required: true
+    required: true,
   },
   title: {
     type: String,
-    required: true
+    required: true,
   },
   description: {
     type: String,
-    required: true
+    required: true,
   },
   displayDate: {
     type: Date,
+    default: Date.now
     // required: true
   },
   expiryDate: {
@@ -25,7 +26,7 @@ const ContentSchema = mongoose.Schema({
   },
   content: {
     type: String,
-  }
+  },
 });
 
 const Content = module.exports = mongoose.model('Content', ContentSchema);

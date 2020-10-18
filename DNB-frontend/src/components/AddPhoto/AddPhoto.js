@@ -8,7 +8,7 @@ class AddPhoto extends React.Component {
             super(props);
 
             var props = this.props.data
-            console.log(props.content.split(','));
+            console.log(props);
             this.state = {
               form: props,
               fields: {},
@@ -26,6 +26,7 @@ class AddPhoto extends React.Component {
         setOfImages(event){
             event.preventDefault();
             const setOfImagesCopy = {...this.state.setOfImages};
+            
             this.setState({
                 setOfImages: ["hello", "hi"]
             })

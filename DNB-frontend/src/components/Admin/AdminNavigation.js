@@ -27,7 +27,7 @@ class AdminNavigation extends Component {
                 <NavLink href="/">Frontend</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink target="_blank"  href="https://github.com/DigitalCareerInstitute/digital-notice-board">GitHub</NavLink>
+                <NavLink target="_blank"  href="https://github.com/osman190/">GitHub</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

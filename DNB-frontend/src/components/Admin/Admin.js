@@ -125,6 +125,7 @@ class Admin extends Component {
   render() {
     let content;
     if(this.state.currentSlide.type){
+      console.log("line 128 ====>", this.state.currentSlide);
       if ( this.state.currentSlide.type === "video") {
          content = <AddVideo data={this.state.currentSlide} sendChildInfo={this.sendInfo.bind(this)}/>
       } else if (this.state.currentSlide.type === "announcement") {

@@ -4,7 +4,7 @@ import "./Video.css";
 
 const Video = props => {
   return (
-    <div className="splinter">
+    <div className="spliter">
     <h2>{props.data.title}</h2>
       <ReactPlayer
         width="100%"

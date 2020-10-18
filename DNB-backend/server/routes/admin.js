@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Content = require('../models/content');
+const Content = require('../models/Content');
 const moment = require('moment');
 const getYoutubeID = require('./youtube');
 
 const addSlide = (req, res) => {
 
-  console.log(req.body)
+  console.log("admin BE ====> 9",req.body);
     if(!req.body) {
         res.send({message: "No content sent!"});
     }
@@ -14,24 +14,24 @@ const addSlide = (req, res) => {
     let slide = req.body;
 
     if(slide.type === 'video') {
-      slide.content = getYoutubeID(slide.content)
+      slide.content = getYoutubeID(slide.content);
     }
 
     if(typeof(slide.content) !== 'string') {
-      slide.content = JSON.stringify(slide.content)
+      slide.content = JSON.stringify(slide.content);
     }
 
     newSlide = new Content(slide);
       newSlide.save(function(err) {
         if(err) {
-          res.status(400);
-          res.send("Error: ", err);
+          res.status(400).send("Error: ", err);
         }
-        res.send({message: "Content created successfully!"})
+        res.json(slide);
     });
 };
 
 const ensureAuthenticated  = (req, res, next) => {
+  console.log(req);
   if(req.isAuthenticated()){
     return next();
   } else {
@@ -40,7 +40,7 @@ const ensureAuthenticated  = (req, res, next) => {
 };
 
 // Admin Home Route
-router.get('/', ensureAuthenticated, (req, res) => {
+router.get('/',  (req, res) => {
   Content.find({}, (err, slides) => {
       if (err) {
           console.log(err)
