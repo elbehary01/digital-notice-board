@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Nav, NavItem, NavLink } from "reactstrap";
+// import { Button, Nav, NavItem, NavLink } from "reactstrap";
 import Slider from "react-slick";
 import Photos from "./components/Photos/Photos.js";
 import Video from "./components/Video/Video.js";

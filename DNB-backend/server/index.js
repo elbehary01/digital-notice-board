@@ -57,7 +57,7 @@ app.use(cookieParser());
 app.use(flash());
 
 // Set Public Folder
-app.use(express.static(path.join(__dirname, './../frontend/public')));
+app.use(express.static(path.join(__dirname, './../../frontend/public')));
 
 // Using session to create a cookie using passport
 app.use(session({
